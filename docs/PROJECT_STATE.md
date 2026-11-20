@@ -57,14 +57,14 @@ No implementation blocker verified at initial setup. The Docker daemon and Compo
   - ?? start_command.sh
   - ?? web/
 - Latest checkpoint:
+  - 5270996 docs: save development session checkpoint
   - 5b94813 docs: save development session checkpoint
   - 9fa1196 announce Trading-R1 official release
-  - c454491 Merge pull request #1613 from TauricResearch/v0.7.1
 - Completed: yes
 - In progress: no
-- Blockers: nope
+- Blockers: no
 
-Recommended next action: save file
+Recommended next action: save
 <!-- saved-state:end -->
 
 ## Persistence and backup

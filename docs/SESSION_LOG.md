@@ -109,3 +109,33 @@ Chronological handover notes for TradingAgents development.
   - .local/logs/
   - /home/codespace/.tradingagents/logs/ when present
   - results/ when present
+
+## Session 2026-11-20 05:25:15 UTC
+
+- Branch: feature/multi-panel-workstation
+- Git status:
+  - ## feature/multi-panel-workstation
+  -  M .gitignore
+  -  M README.md
+  -  M main.py
+  - ?? .devcontainer/
+  - ?? .github/copilot-instructions.md
+  - ?? THIRD_PARTY_NOTICES.md
+  - ?? resume_session.sh
+  - ?? save_session.sh
+  - ?? start_command.sh
+  - ?? web/
+- Latest commits:
+  - 5270996 docs: save development session checkpoint
+  - 5b94813 docs: save development session checkpoint
+  - 9fa1196 announce Trading-R1 official release
+- What was completed: yes
+- Current work: no
+- Recommended next task: save
+- Blockers/errors: no
+- Running development services:
+  - NAME      IMAGE     COMMAND   SERVICE   CREATED   STATUS    PORTS
+- Recent application log locations:
+  - .local/logs/
+  - /home/codespace/.tradingagents/logs/ when present
+  - results/ when present

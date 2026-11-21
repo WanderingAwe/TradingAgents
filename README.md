@@ -171,6 +171,44 @@ To inspect the environment without starting the server:
 
 The Vite website listens on `0.0.0.0:5173`. In GitHub Codespaces, open the **Ports** tab and use the private forwarded port labelled `TradingAgents Research Studio`. The Phase 1 website uses only local demonstration data and does not call TradingAgents, market, LLM or Telegram services.
 
+## Phase 1.8 — Backend, Database & API Foundation
+
+The backend is a FastAPI application (`backend/`) with SQLAlchemy 2.x ORM, Alembic migrations, and a SQLite default database (PostgreSQL-compatible via `DATABASE_URL`). It provides versioned HTTP APIs under `/api/v1` for instruments, data sources, and observations, plus health and system-status endpoints.
+
+The frontend calls the backend through the Vite dev proxy (`/api` → `http://127.0.0.1:8000`). The Research Studio frontend remains fully operational when the backend is unavailable; it shows backend status as `disconnected`/`not_configured` rather than faking connectivity.
+
+### Backend setup
+
+```bash
+# From the repository root
+pip install -e .                          # installs backend + TradingAgents deps
+cp .env.example .env                      # adjust DATABASE_URL if using PostgreSQL
+cd backend && alembic upgrade head        # run migrations
+cd ..                                     # back to repo root
+uvicorn backend.app:app --reload --port 8000
+```
+
+The backend listens on `127.0.0.1:8000`. API docs are at `http://127.0.0.1:8000/docs`.
+
+### Running frontend and backend together
+
+```bash
+# Terminal 1: backend
+uvicorn backend.app:app --reload --port 8000
+
+# Terminal 2: frontend
+cd web && pnpm install && pnpm run dev
+```
+
+The Vite dev server proxies `/api` requests to the FastAPI backend. The System Health page (`/workspace` route) reads actual backend status.
+
+### Backend tests
+
+```bash
+cd /workspaces/TradingAgents
+python -m pytest backend/tests/ -v
+```
+
 ### Required APIs
 
 TradingAgents supports multiple LLM providers. Set the API key for your chosen provider:

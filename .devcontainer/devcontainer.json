@@ -1,0 +1,22 @@
+{
+  "name": "TradingAgents Codespaces",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.13-bookworm",
+  "workspaceFolder": "/workspaces/TradingAgents",
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": {
+      "label": "TradingAgents Research Studio",
+      "onAutoForward": "notify",
+      "visibility": "private"
+    }
+  },
+  "postCreateCommand": "bash -lc 'cd \"${containerWorkspaceFolder}\" && if [[ ! -x .venv/bin/python ]]; then python3 -m venv .venv && .venv/bin/python -m pip install -e \".[dev]\"; fi'",
+  "postStartCommand": "bash -lc 'cd \"${containerWorkspaceFolder}\" && ./start_command.sh --check'",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python"
+      }
+    }
+  }
+}

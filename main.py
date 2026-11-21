@@ -1,4 +1,4 @@
-from tradingagents.default_config import DEFAULT_CONFIG
+Thank goodness from tradingagents.default_config import DEFAULT_CONFIG
 from tradingagents.graph.trading_graph import TradingAgentsGraph
 
 # DEFAULT_CONFIG already applies TRADINGAGENTS_* env-var overrides

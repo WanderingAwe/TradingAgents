@@ -1,0 +1,34 @@
+:root {
+  --terminal-bg: #080a0d;
+  --terminal-panel: #0e1115;
+  --terminal-panel-2: #12161b;
+  --terminal-line: #252b33;
+  --terminal-line-strong: #3a424d;
+  --terminal-amber: #d79a43;
+  --terminal-amber-bright: #f2b84b;
+  --terminal-blue: #1f67a8;
+  --terminal-blue-strong: #2f7fbd;
+  --terminal-text: #e5e9ed;
+  --terminal-muted: #929aa5;
+  --terminal-positive: #55b89a;
+  --terminal-negative: #da6969;
+  --terminal-warning: #d9b66a;
+  --terminal-font: "SFMono-Regular", "Roboto Mono", "Cascadia Mono", Consolas, monospace;
+}
+
+:root[data-theme="light"] {
+  --terminal-bg: #edf1f4;
+  --terminal-panel: #f7f9fa;
+  --terminal-panel-2: #ffffff;
+  --terminal-line: #ccd4dc;
+  --terminal-line-strong: #adb8c3;
+  --terminal-amber: #9a651c;
+  --terminal-amber-bright: #7c4d10;
+  --terminal-blue: #b9d3e8;
+  --terminal-blue-strong: #78acd2;
+  --terminal-text: #20262d;
+  --terminal-muted: #637080;
+  --terminal-positive: #26765e;
+  --terminal-negative: #a33d3d;
+  --terminal-warning: #8a671e;
+}

@@ -149,6 +149,9 @@ activemq-data/
 
 # Environments
 .env
+.env.*
+!.env.example
+!.env.enterprise.example
 .envrc
 .venv
 env/
@@ -156,6 +159,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Codespaces runtime data, logs, reports and backups
+.local/
 
 # Spyder project settings
 .spyderproject
@@ -217,6 +223,11 @@ __marimo__/
 
 # Cache
 **/data_cache/
+
+# Research Studio frontend
+web/node_modules/
+web/dist/
+web/.vite/
 
 # Enterprise env file (secrets) and generated run reports
 .env.enterprise

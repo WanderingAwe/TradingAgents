@@ -153,6 +153,24 @@ For local models with Ollama:
 docker compose --profile ollama run --rm tradingagents-ollama
 ```
 
+### TradingAgents Research Studio (Phase 1 demo)
+
+From the repository root, start the browser application:
+
+```bash
+./start_command.sh
+```
+
+The server runs in this terminal on `0.0.0.0:5173`; keep the terminal session open while using the website. Press Ctrl+C to stop it. If frontend dependencies are missing in a fresh environment, install them once with `cd web && pnpm install`.
+
+To inspect the environment without starting the server:
+
+```bash
+./start_command.sh --status
+```
+
+The Vite website listens on `0.0.0.0:5173`. In GitHub Codespaces, open the **Ports** tab and use the private forwarded port labelled `TradingAgents Research Studio`. The Phase 1 website uses only local demonstration data and does not call TradingAgents, market, LLM or Telegram services.
+
 ### Required APIs
 
 TradingAgents supports multiple LLM providers. Set the API key for your chosen provider:

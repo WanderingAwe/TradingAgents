@@ -185,3 +185,84 @@ Chronological handover notes for TradingAgents development.
   - .local/logs/
   - /home/codespace/.tradingagents/logs/ when present
   - results/ when present
+
+## Session 2026-11-23 11:16:30 UTC
+
+- Branch: feature/research-engine-first
+- Git status:
+  - ## feature/research-engine-first
+  -  M backend/api/v1/router.py
+  -  M backend/models/datasource.py
+  -  M backend/schemas/__init__.py
+  -  M backend/schemas/datasource.py
+  - ?? backend/alembic/versions/e4f6a7b8c9d0_extend_datasource_with_registry_columns.py
+  - ?? backend/api/v1/sources.py
+  - ?? backend/schemas/contracts.py
+  - ?? backend/services/
+  - ?? backend/tests/test_contracts.py
+  - ?? backend/tests/test_source_registry.py
+- Latest commits:
+  - f238015 docs: save development session checkpoint
+  - b77b1a9 docs: save development session checkpoint
+  - f8ac752 chore: neutralize backend API description
+- What was completed: yes
+- Current work: yes
+- Recommended next task: save
+- Blockers/errors: no
+- Running development services:
+  - NAME      IMAGE     COMMAND   SERVICE   CREATED   STATUS    PORTS
+- Recent application log locations:
+  - .local/logs/
+  - /home/codespace/.tradingagents/logs/ when present
+  - results/ when present
+
+## Session 2026-11-23 20:11:58 UTC
+
+- Branch: feature/research-engine-first
+- Git status:
+  - ## feature/research-engine-first
+  -  M backend/api/deps.py
+  -  M backend/api/v1/observations.py
+  -  M backend/api/v1/router.py
+  -  M backend/config.py
+  -  M backend/models/__init__.py
+  -  M backend/models/datasource.py
+  -  M backend/schemas/__init__.py
+  -  M backend/schemas/datasource.py
+  -  M backend/tests/conftest.py
+  -  M backend/tests/test_api.py
+  -  M backend/tests/test_migrations.py
+  -  M docs/PROJECT_STATE.md
+  -  M docs/SESSION_LOG.md
+  -  M tests/test_graph_end_to_end.py
+  -  M tradingagents/agents/analysts/turn.py
+  -  M tradingagents/agents/tools.py
+  -  M tradingagents/dataflows/config.py
+  -  M tradingagents/dataflows/router.py
+  -  M tradingagents/default_config.py
+  -  M tradingagents/graph/trading_graph.py
+  - ?? backend/alembic/versions/e4f6a7b8c9d0_extend_datasource_with_registry_columns.py
+  - ?? backend/alembic/versions/e5a1b2c3d4e5_extend_datasource_with_permission_grants.py
+  - ?? backend/api/v1/sources.py
+  - ?? backend/schemas/contracts.py
+  - ?? backend/services/
+  - ?? backend/tests/test_contracts.py
+  - ?? backend/tests/test_source_access.py
+  - ?? backend/tests/test_source_registry.py
+  - ?? tests/test_inference_enforcement.py
+  - ?? tests/test_source_access_mode.py
+  - ?? tests/test_source_access_router.py
+- Latest commits:
+  - f238015 docs: save development session checkpoint
+  - b77b1a9 docs: save development session checkpoint
+  - f8ac752 chore: neutralize backend API description
+- What was completed: yes
+- Current work: no
+- Recommended next task: save
+- Blockers/errors: no
+- Running development services:
+  - NAME      IMAGE     COMMAND   SERVICE   CREATED   STATUS    PORTS
+- Recent application log locations:
+  - .local/logs/
+  - /home/codespace/.tradingagents/logs/ when present
+  - results/ when present
